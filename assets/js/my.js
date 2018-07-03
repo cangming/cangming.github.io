@@ -12,7 +12,7 @@ function createId() {
   return rtn;
 }
 function initTaipeiTimer() {
-	var taipei_date = new Date("Sep 15, 2018 12:30:00").getTime();
+	var taipei_date = new Date("Sep 15, 2018 12:00:00").getTime();
 	makeCountdownTimer(taipei_date, 'taipei-timer');
 }
 
