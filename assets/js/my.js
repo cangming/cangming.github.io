@@ -243,6 +243,7 @@ function serverResponse(e)
 		info = '不知道哪裡錯了，麻煩聯絡新郎官解個Bug QQ';
 	}
 	alert(info);
+	document.getElementById("submitBtn").innerHTML = '我填好了';
 	if (!skip_reload_recaptcha) {
 		grecaptcha.reset();
 		document.getElementById("submitBtn").disabled = true;
@@ -265,6 +266,8 @@ function initMap()
 }
 
 $('#submitBtn').on('click', function(e) {
+	document.getElementById("submitBtn").disabled = true;
+	document.getElementById("submitBtn").innerHTML = '送出中...';
 	var data = $('form#reg_form');
 	$.ajax({
 		type: "GET",
