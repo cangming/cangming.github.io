@@ -86,6 +86,11 @@ function paddingZero(data) {
 function recaptchaCallback()
 {
 	$('#submitBtn').removeAttr('disabled');
+	if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+		var target = $('#recaptcha').offset();
+		target.top = target.top - innerHeight/2;
+		window.scrollTo(target);
+	}
 }
 
 function getJoinTypeFormAction(type)
