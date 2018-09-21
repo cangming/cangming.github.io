@@ -106,20 +106,6 @@
             </div>
         </div>
         <div class="intro-img"
-            style="background-image: url('assets/img/h1.jpg'); background-size: cover; height: 100vh;">
-            <div class="container">
-                <div class="intro-text">
-                    <h1 class="inverse">
-                        台北訂婚宴 <br>
-                        <small class="text-muted">2018/9/15  12:00 頤品大飯店北新館 玉蕗廳</small>
-                    </h1>
-                    <h3 class="inverse" style="text-align: center; margin-top: 50px;">Time Left</h3>
-                    <div class='taipei-timer' style="margin: auto;"></div>
-                    <a href="#registry"><button class="btn btn-primary pmd-btn-outline pmd-ripple-effect btn-lg">Registry</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="intro-img"
             style="background-image: url('assets/img/h2.jpg'); background-size: cover;  height: 100vh;">
             <div class="container">
                 <div class="intro-text">
@@ -235,21 +221,8 @@
         <div class="container-fluid"> 
             <h2 class="text-center">婚宴資訊</h2>
             <div class="row justify-content-md-center" style="width: 80%; margin: 0 auto;"> 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                     <h3 class="text-center">訂婚宴</h3>
-                     <p class="text-justify">
-                         <br>時間： 2018/09/15 12:00PM
-                         <br>地點： 頤品大飯店北新館 玉蕗廳
-                         <br>地址： 23143 新北市新店區北新路三段207號
-                     </p>
-                     <iframe id="taipei_map" width="100%" height="450" frameborder="0" style="border: 0"
-                         src=""
-                         allowfullscreen> 
-                      </iframe>
-                    </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h3 class="text-center">結婚宴</h3>
-                    <p class="text-justify">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>
                         <br>時間： 2018/11/25 12:00PM
                         <br>地點： 福泰商務飯店 福泰廳
                         <br>地址： 50060 彰化縣彰化市建寶街20號
@@ -291,26 +264,26 @@
                                     <span for=""wife_click"">女方親友</span> </label>
                             </div>
                             <p>要出席我們的婚禮嗎*</p>
-                            <div class="radio my-radio">
+                            <div class="radio my-radio" style="display: none;">
                                 <label class="pmd-radio pmd-radio-ripple-effect">
-                                    <input type="radio" name="joinType" id="both_click" onClick="setFormVisible('both');" value=0 checked>
+                                    <input type="radio" name="joinType" id="both_click" onClick="setFormVisible('both');" value=0>
                                     <span for="both_click">好啊！ 我訂婚、結婚都想去 (非常歡迎喔，紅包在訂婚場給，給一場就好了喔~)</span>
                                     </label>
                             </div>
-                            <div class="radio my-radio">
+                            <div class="radio my-radio" style="display: none;">
                                 <label class="pmd-radio pmd-radio-ripple-effect">
                                     <input type="radio" name="joinType" id="engaged_click" onClick="setFormVisible('engage');" value=1>
                                     <span for="engaged_click">我想參加訂婚宴 (9/15)</span> </label>
                             </div>
                             <div class="radio my-radio">
                                 <label class="pmd-radio pmd-radio-ripple-effect">
-                                    <input type="radio" name="joinType" id="merry_click" onClick="setFormVisible('merry');" value=2>
+                                    <input type="radio" name="joinType" id="merry_click" onClick="setFormVisible('merry');" value=2 checked>
                                     <span for="merry_click">我想參加結婚宴 (11/25)</span> </label>
                             </div>
                             <div class="radio my-radio">
                                 <label class="pmd-radio pmd-radio-ripple-effect">
                                     <input type="radio" name="joinType" id="only_ticket_click" onClick="setFormVisible('ticket_only');" value=3>
-                                    <span for="only_ticket_click">有事無法出席，但我要喜帖 (會根據是新人哪方的親友給予對應的喜帖喔)</span> </label>
+                                    <span for="only_ticket_click">有事無法出席，但我要喜帖</span> </label>
                             </div>
                             <div class="radio my-radio">
                                 <label class="pmd-radio pmd-radio-ripple-effect">
@@ -370,24 +343,7 @@
         <div class="container">
             <!-- Social icons -->
             <div class="row justify-content-md-center" style="width: 80%; margin: 0 auto; padding-bottom: 30px; padding-top: 10vh;">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="social-icons text-center">
-            			<ul class="icons-medium list-inline">
-                			<li class="facebook">
-                            	<a href="https://www.facebook.com/groups/522342138183303" target="_blank" class="pmd-ripple-effect">
-        							<svg version="1.1"  x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-                                        <g>
-                                            <path fill="#FFFFFF" d="M17.5,14.5c0,0.504,0,3,0,3h-2v2.994l2,0.006v10h4v-10h3c0,0,0-0.985,0-3c-0.35,0-3,0-3,0s0-2.657,0-3
-                                                c0-0.344,0.569-1,1-1c0.43,0,1.16,0,2,0c0-0.459,0-1.537,0-3c-1.121,0-2.438,0-3,0C17.307,10.5,17.5,13.997,17.5,14.5z"/>
-                                        </g>
-                                    </svg>
-                                </a>
-                                <h5 class="inverse"> Facebook 訂婚活動社團 </h5>
-                            </li>
-            			</ul>
-                     </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                      <div class="social-icons text-center">
                         <ul class="icons-medium list-inline">
                             <li class="facebook">

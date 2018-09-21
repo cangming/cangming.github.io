@@ -11,10 +11,6 @@ function createId() {
   }
   return rtn;
 }
-function initTaipeiTimer() {
-	var taipei_date = new Date("Sep 15, 2018 12:00:00").getTime();
-	makeCountdownTimer(taipei_date, 'taipei-timer');
-}
 
 function initChanghuaTimer() {
 	var changhua_date = new Date("Nov 25, 2018 12:00:00").getTime();
@@ -258,9 +254,6 @@ function serverResponse(e)
 function initMap()
 {
 	var map_info = [{
-		div_id: 'taipei_map',
-		url: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBlD-vfwj6iVbA4QwLF64tmYvjFvwk6Bbk&q=頤品大飯店+新北北新館,Seattle+WA'
-	}, {
 		div_id: 'changhua_map',
 		url: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBlD-vfwj6iVbA4QwLF64tmYvjFvwk6Bbk&q=彰化福泰商務飯店,Seattle+WA'
 	}];
@@ -295,8 +288,8 @@ function initImg()
 
 /* main function */
 (function(){
-	initTaipeiTimer();
 	initChanghuaTimer();
+	setFormVisible('merry');
 })();
 
 $(document).ready(function() {
